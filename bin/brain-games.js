@@ -33,4 +33,4 @@ function ascking() {
   return console.log(`Congratulations, ${name}`);
 }
 
-ascking();
+export default ascking();
