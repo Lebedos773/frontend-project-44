@@ -9,15 +9,14 @@ console.log(`Hello ${name}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-const number = Math.round(Math.random(10) * 10);
-
-const question = readLineSync.question(`Question: ${number}`);
-console.log(`Your answer: ${question}`);
-
 function ascking() {
   let i = 0;
 
   while (i < 3) {
+    const number = Math.round(Math.random(10) * 10);
+    const question = readLineSync.question(`Question: ${number}`);
+    console.log(`Your answer: ${question}`);
+
     if (number % 2 === 0 && question === 'yes') {
       i += 1;
       console.log('Correct!');
@@ -28,7 +27,7 @@ function ascking() {
       return console.log(`${question} is wrong answer ;(.\nLet's try again, ${name}!`);
     }
   }
-  console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}`);
 }
 
-console.log(ascking(number));
+ascking();
