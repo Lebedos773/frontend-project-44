@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import readLineSync from 'readline-sync';
 
 console.log('Welcome to the Brain Games!');
