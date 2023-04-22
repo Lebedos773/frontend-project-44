@@ -27,7 +27,7 @@ function ascking() {
       const wrongYes = `${question} is wrong answer ;(. correct answer was 'no'.\nLet's try again ${name}!`;
       const wrongNo = `${question} is wrong answer ;(. correct answer was 'yes'.\nLet's try again ${name}!`;
 
-      return question === 'no' ? console.log(wrongNo) : console.log(wrongYes);
+      return question === 'no' || number % 2 === 0 ? console.log(wrongNo) : console.log(wrongYes);
     }
   }
   return console.log(`Congratulations, ${name}`);
