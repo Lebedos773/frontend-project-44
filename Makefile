@@ -7,6 +7,9 @@ brain-games:
 brain-even:
 		node bin/brain-even.js
 
+Brain-calc:
+		node bin/brain-calc.js
+
 run:
 		npm publish --dry-run
 
