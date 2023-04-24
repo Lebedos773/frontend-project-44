@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/63c3cd568afabce94f4d/maintainability)](https://codeclimate.com/github/Lebedos773/frontend-project-44/maintainability)
 
 brain-even asciinema:
-https://asciinema.org/a/2rKFcyBbuBSgUyJqe9clSebmu
+https://asciinema.org/a/GBqXtckVVWuI7fj9UZpKTB6Bn
 
 brain-calc asciinema:
-https://asciinema.org/a/l0zw96q5rCEg92cNByhasE0k8
+https://asciinema.org/a/hHgTrchsTpxWJqCdN5cQL8hqA

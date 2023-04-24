@@ -23,17 +23,17 @@ function ascking() {
 
     const number1 = Math.round(Math.random(10) * 10);
     const number2 = Math.round(Math.random(10) * 10);
-    const example = `${number1} ${operator} ${number2}`;
-
-    const question = readLineSync.question(`Question: ${example}`);
-    console.log(`Your answer: ${question}`);
+    const example = `${number1} ${operator} ${number2}`;  
+    
+    console.log(`Question: ${example}`);
+    const answ = readLineSync.question('Your answer: ');
     const sum = mathematics(number1, operator, number2);
    
-    if (sum === Number(question)) {
+    if (sum === Number(answ)) {
       i += 1;
       console.log('Correct!');
     } else {
-      return console.log(`${question} is wrong answer ;(. correct answer was ${sum}.\nLet's try again ${name}!`);
+      return console.log(`${answ} is wrong answer ;(. correct answer was ${sum}.\nLet's try again ${name}!`);
     }
   }
   return console.log(`Congratulations, ${name}`);

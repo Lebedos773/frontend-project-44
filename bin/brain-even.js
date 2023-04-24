@@ -14,20 +14,22 @@ function ascking() {
 
   while (i < 3) {
     const number = Math.round(Math.random(10) * 10);
-    const question = readLineSync.question(`Question: ${number}`);
-    console.log(`Your answer: ${question}`);
 
-    if (number % 2 === 0 && question === 'yes') {
+    console.log(`Question: ${number}`);
+
+    const answ = readLineSync.question('Your answer: ');
+
+    if (number % 2 === 0 && answ === 'yes') {
       i += 1;
       console.log('Correct!');
-    } else if (number % 2 !== 0 && question === 'no') {
+    } else if (number % 2 !== 0 && answ === 'no') {
       i += 1;
       console.log('Correct!');
     } else {
-      const wrongYes = `${question} is wrong answer ;(. correct answer was 'no'.\nLet's try again ${name}!`;
-      const wrongNo = `${question} is wrong answer ;(. correct answer was 'yes'.\nLet's try again ${name}!`;
+      const wrongYes = `${answ} is wrong answer ;(. correct answer was 'no'.\nLet's try again ${name}!`;
+      const wrongNo = `${answ} is wrong answer ;(. correct answer was 'yes'.\nLet's try again ${name}!`;
 
-      return question === 'no' || number % 2 === 0 ? console.log(wrongNo) : console.log(wrongYes);
+      return answ === 'no' || number % 2 === 0 ? console.log(wrongNo) : console.log(wrongYes);
     }
   }
   return console.log(`Congratulations, ${name}`);
