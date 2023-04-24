@@ -12,15 +12,15 @@ console.log(`Hello ${name}!`);
 console.log('What is the result of the expression?');
 
 
-const ops = ['-', '+', '*'];
-const opindex = Math.floor(Math.random()*3);
-const operator = ops[opindex];
-
-
 function ascking() {
+  
   let i = 0;
 
   while (i < 3) {
+    const ops = ['-', '+', '*'];
+    const opindex = Math.floor(Math.random()*3);
+    const operator = ops[opindex];
+
     const number1 = Math.round(Math.random(10) * 10);
     const number2 = Math.round(Math.random(10) * 10);
     const example = `${number1} ${operator} ${number2}`;
@@ -38,5 +38,6 @@ function ascking() {
   }
   return console.log(`Congratulations, ${name}`);
 }
+
 
 ascking()
