@@ -4,3 +4,6 @@
 
 brain-even asciinema:
 https://asciinema.org/a/2rKFcyBbuBSgUyJqe9clSebmu
+
+brain-calc asciinema:
+https://asciinema.org/a/l0zw96q5rCEg92cNByhasE0k8
