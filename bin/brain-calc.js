@@ -21,9 +21,9 @@ function ascking() {
     const opindex = Math.floor(Math.random()*3);
     const operator = ops[opindex];
 
-    const number1 = Math.round(Math.random(10) * 10);
     const number2 = Math.round(Math.random(10) * 10);
-    const example = `${number1} ${operator} ${number2}`;  
+    const number1 = Math.round(Math.random(10) * 10);ф
+    const example = `${number1} ${operator} ${number2}`;
     
     console.log(`Question: ${example}`);
     const answ = readLineSync.question('Your answer: ');
