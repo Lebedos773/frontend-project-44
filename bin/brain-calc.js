@@ -22,7 +22,7 @@ function ascking() {
     const operator = ops[opindex];
 
     const number2 = Math.round(Math.random(10) * 10);
-    const number1 = Math.round(Math.random(10) * 10);ф
+    const number1 = Math.round(Math.random(10) * 10);
     const example = `${number1} ${operator} ${number2}`;
     
     console.log(`Question: ${example}`);
@@ -36,7 +36,7 @@ function ascking() {
       return console.log(`${answ} is wrong answer ;(. correct answer was ${sum}.\nLet's try again ${name}!`);
     }
   }
-  return console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
 

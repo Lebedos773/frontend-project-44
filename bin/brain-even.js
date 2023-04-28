@@ -32,7 +32,7 @@ function ascking() {
       return answ === 'no' || number % 2 === 0 ? console.log(wrongNo) : console.log(wrongYes);
     }
   }
-  return console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
 ascking()
