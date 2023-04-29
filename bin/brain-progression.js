@@ -30,7 +30,7 @@ function ascking() {
   while (i < 3) {
   
     const arr1 = makeProgression();
-    const getRandom = Math.round(Math.random() * 10);
+    const getRandom = Math.round(Math.random() * 9);
     const rightAnswer = arr1[getRandom];
     const arr2 = arr1;
     arr2[getRandom] = '..';
