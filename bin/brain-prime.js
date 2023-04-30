@@ -4,21 +4,16 @@ import readLineSync from 'readline-sync';
 
 const num = Math.round(Math.random() * 100);
 
-const primeNumber = () => {
+const primeNumber = (num) => {
 
-  const halfNumber = Math.round(num / 2);
-  let i = 2;
-  while (i < halfNumber) {
-    
-    if (num % i === 0) {
-      return 'no'
-    }
-    i++;
+  for (var i = 2; i < num; i++) {
+      if (num % i === 0) {
+          return 'no';
+      }
   }
-  return 'yes'
-};
+  return 'yes';
+}
 
-const answer = primeNumber(num)
 
 console.log('Welcome to the Brain Games!');
 
@@ -28,18 +23,28 @@ console.log(`Hello ${name}!`);
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-console.log(`Question: ${num}`);
 
-const userUnswer = readLineSync.question('Your answer: ');
 
 const question = () => {
-if (answer === userUnswer) {
-  console.log('Correct!');
-  } else {
-    return console.log(`${userUnswer} is wrong answer ;(. correct answer was ${answer}.\nLet's try again ${name}!`);
+
+  let i = 0;
+
+  while (i < 3) {
+
+    const num = Math.round(Math.random() * 100);
+    const answer = primeNumber(num);
+    console.log(`Question: ${num}`);
+    const userUnswer = readLineSync.question('Your answer: ');
+    
+      if (answer === userUnswer) {
+        i += 1;
+        console.log('Correct!');
+
+      } else {
+        return console.log(`${userUnswer} is wrong answer ;(. correct answer was ${answer}.\nLet's try again ${name}!`);
+    }
   }
-  
-return console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
 question()
