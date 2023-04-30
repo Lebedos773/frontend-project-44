@@ -18,11 +18,10 @@ const makeProgression = () => {
   for (let i = 0; i < rndmStep * 10; i += rndmStep) {
     result.push(rndmNum + i);
   }
-
   return result;
-}
+};
 
-function ascking() {
+const ascking = () => {
   let i = 0;
 
   while (i < 3) {
@@ -43,8 +42,7 @@ function ascking() {
       return console.log(`${userAnswer} is wrong answer ;(. correct answer was ${rightAnswer}.\nLet's try again, ${name}!`);
     }
   }
-  
   return console.log(`Congratulations, ${name}!`);
-}
+};
 
 ascking();
