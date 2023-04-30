@@ -12,8 +12,8 @@ console.log('What number is missing in the progression?.');
 const makeProgression = () => {
   let result = [];
 
-  const rndmNum = Math.round(Math.random() * 100);
-  const rndmStep = Math.round(Math.random() * 5);
+  const rndmNum = Math.ceil(Math.random() * 100);
+  const rndmStep = Math.ceil(Math.random() * 5);
 
   for (let i = 0; i < rndmStep * 10; i += rndmStep) {
     result.push(rndmNum + i);
@@ -22,13 +22,13 @@ const makeProgression = () => {
   return result;
 }
 
-function ascking(){
+function ascking() {
   let i = 0;
 
   while (i < 3) {
   
     const arr1 = makeProgression();
-    const getRandom = Math.round(Math.random() * 9);
+    const getRandom = Math.ceil(Math.random() * 9);
     const rightAnswer = arr1[getRandom];
     const arr2 = arr1;
     arr2[getRandom] = '..';
