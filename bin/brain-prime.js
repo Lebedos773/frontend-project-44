@@ -33,11 +33,8 @@ const question = () => {
     const answer = primeNumber(num);
     console.log(`Question: ${num}`);
     const userUnswer = readLineSync.question('Your answer: ');
-      if (answer === 1) {
-        return console.log(`1 is wrong answer ;(. correct answer was ${answer}.\nLet's try again, ${name}!`);
-      }
-    
-      if (answer === userUnswer) {
+     
+      if (answer === userUnswer && answer !== 1) {
         i += 1;
         console.log('Correct!');
 
@@ -46,6 +43,6 @@ const question = () => {
     }
   }
   return console.log(`Congratulations, ${name}!`);
-}
+};
 
 question();
