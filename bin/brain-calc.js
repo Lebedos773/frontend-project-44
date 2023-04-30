@@ -10,7 +10,7 @@ console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
 
-function ascking(){
+function ascking() {
 
   let i = 0;
 
@@ -22,11 +22,11 @@ function ascking(){
     const number2 = Math.round(Math.random(10) * 10);
     const number1 = Math.round(Math.random(10) * 10);
     const example = `${number1} ${operator} ${number2}`;
-  
+
     console.log(`Question: ${example}`);
     const answ = readLineSync.question('Your answer: ');
     const sum = mathematics(number1, operator, number2);
-  
+
     if (sum === Number(answ)) {
       i += 1;
       console.log('Correct!');
@@ -37,4 +37,4 @@ function ascking(){
   return console.log(`Congratulations, ${name}!`);
 }
 
-ascking()
+  ascking();
