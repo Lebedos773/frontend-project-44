@@ -36,7 +36,7 @@ function ascking() {
     arr2[getRandom] = '..';
 
 
-    console.log(`Question: ${arr2}`);
+    console.log(`Question: ${arr2.join(' ')}`);
     const userAnswer = readLineSync.question('Your answer: ');
    
     if (Number(userAnswer) === rightAnswer) {
