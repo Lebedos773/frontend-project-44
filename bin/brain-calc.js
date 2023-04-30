@@ -10,7 +10,7 @@ console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
 
-function ascking () {
+const ascking = () => {
 
   let i = 0;
 
