@@ -28,7 +28,7 @@ function ascking() {
       i += 1;
       console.log('Correct!');
     } else {
-      return console.log(`${answ} is wrong answer ;(. correct answer was ${sum}.\nLet's try again ${name}!`);
+      return console.log(`${answ} is wrong answer ;(. correct answer was ${sum}.\nLet's try again, ${name}!`);
     }
   }
   

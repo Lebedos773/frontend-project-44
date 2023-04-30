@@ -26,8 +26,8 @@ function ascking() {
       i += 1;
       console.log('Correct!');
     } else {
-      const wrongYes = `${answ} is wrong answer ;(. correct answer was 'no'.\nLet's try again ${name}!`;
-      const wrongNo = `${answ} is wrong answer ;(. correct answer was 'yes'.\nLet's try again ${name}!`;
+      const wrongYes = `${answ} is wrong answer ;(. correct answer was 'no'.\nLet's try again, ${name}!`;
+      const wrongNo = `${answ} is wrong answer ;(. correct answer was 'yes'.\nLet's try again, ${name}!`;
 
       return answ === 'no' || number % 2 === 0 ? console.log(wrongNo) : console.log(wrongYes);
     }

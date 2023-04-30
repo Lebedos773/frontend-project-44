@@ -43,7 +43,7 @@ function ascking() {
       i += 1;
       console.log('Correct!');
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. correct answer was ${rightAnswer}.\nLet's try again ${name}!`);
+      return console.log(`${userAnswer} is wrong answer ;(. correct answer was ${rightAnswer}.\nLet's try again, ${name}!`);
     }
   }
   

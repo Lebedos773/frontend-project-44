@@ -41,7 +41,7 @@ const question = () => {
         console.log('Correct!');
 
       } else {
-        return console.log(`${userUnswer} is wrong answer ;(. correct answer was ${answer}.\nLet's try again ${name}!`);
+        return console.log(`${userUnswer} is wrong answer ;(. correct answer was ${answer}.\nLet's try again, ${name}!`);
     }
   }
   return console.log(`Congratulations, ${name}!`);
