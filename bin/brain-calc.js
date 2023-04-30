@@ -10,7 +10,7 @@ console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
 
-function ascking() {
+function ascking () {
 
   let i = 0;
 
@@ -37,4 +37,4 @@ function ascking() {
   return console.log(`Congratulations, ${name}!`);
 }
 
-  ascking();
+ascking();
