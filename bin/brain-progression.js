@@ -24,7 +24,7 @@ const makeProgression = () => {
 }
 
 
-function ascking() {
+function ascking(){
   let i = 0;
 
   while (i < 3) {

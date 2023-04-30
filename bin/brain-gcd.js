@@ -11,7 +11,7 @@ const name = readLineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 console.log('Find the greatest common divisor of given numbers.');
 
-function ascking() {
+function ascking(){
   let i = 0;
 
   while (i < 3) {

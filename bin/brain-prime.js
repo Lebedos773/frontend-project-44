@@ -30,7 +30,7 @@ const question = () => {
 
   let i = 0;
 
-  while (i < 3) {
+  while (i < 3){
 
     const num = Math.round(Math.random() * 100);
 
