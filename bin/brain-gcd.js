@@ -3,7 +3,6 @@
 import readLineSync from 'readline-sync';
 import { NOD } from '../src/index.js';
 
-
 console.log('Welcome to the Brain Games!');
 
 const name = readLineSync.question('May I have your name? ');
@@ -11,7 +10,7 @@ const name = readLineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 console.log('Find the greatest common divisor of given numbers.');
 
-function ascking(){
+function ascking() {
   let i = 0;
 
   while (i < 3) {
@@ -35,4 +34,4 @@ function ascking(){
   return console.log(`Congratulations, ${name}!`);
 }
 
-ascking()
+ascking();

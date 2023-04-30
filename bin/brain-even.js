@@ -9,7 +9,7 @@ console.log(`Hello, ${name}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-function ascking(){
+function ascking() {
   let i = 0;
 
   while (i < 3) {
@@ -35,4 +35,4 @@ function ascking(){
   return console.log(`Congratulations, ${name}!`);
 }
 
-ascking()
+ascking();

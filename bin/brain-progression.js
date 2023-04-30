@@ -9,7 +9,6 @@ const name = readLineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 console.log('What number is missing in the progression?.');
 
-
 const makeProgression = () => {
   let result = [];
 
@@ -23,7 +22,6 @@ const makeProgression = () => {
   return result;
 }
 
-
 function ascking(){
   let i = 0;
 
@@ -34,7 +32,6 @@ function ascking(){
     const rightAnswer = arr1[getRandom];
     const arr2 = arr1;
     arr2[getRandom] = '..';
-
 
     console.log(`Question: ${arr2.join(' ')}`);
     const userAnswer = readLineSync.question('Your answer: ');
@@ -50,5 +47,4 @@ function ascking(){
   return console.log(`Congratulations, ${name}!`);
 }
 
-
-ascking()
+ascking();
