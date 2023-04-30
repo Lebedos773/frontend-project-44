@@ -10,8 +10,7 @@ console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
 
-const ascking = () => {
-
+const ascking = () =>{
   let i = 0;
 
   while (i < 3) {
@@ -35,6 +34,6 @@ const ascking = () => {
     }
   }
   return console.log(`Congratulations, ${name}!`);
-}
+};
 
 ascking();
