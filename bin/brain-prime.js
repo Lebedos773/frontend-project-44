@@ -26,15 +26,20 @@ console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 
 const question = () => {
+  
 
   let i = 0;
 
   while (i < 3) {
 
     const num = Math.round(Math.random() * 100);
+
     const answer = primeNumber(num);
     console.log(`Question: ${num}`);
     const userUnswer = readLineSync.question('Your answer: ');
+      if (answer === 1) {
+        return console.log(`1 is wrong answer ;(. correct answer was ${answer}.\nLet's try again, ${name}!`);
+      }
     
       if (answer === userUnswer) {
         i += 1;
