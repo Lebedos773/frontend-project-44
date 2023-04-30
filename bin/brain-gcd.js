@@ -16,8 +16,8 @@ function ascking() {
 
   while (i < 3) {
 
-    const number1 = Math.round(Math.random(10) * 10);
-    const number2 = Math.round(Math.random(10) * 10);
+    const number1 = Math.ceil(Math.random() * 10);
+    const number2 = Math.ceil(Math.random() * 10);
     const example = `${number1} ${number2}`;
     
     console.log(`Question: ${example}`);
