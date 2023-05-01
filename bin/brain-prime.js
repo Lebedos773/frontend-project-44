@@ -34,7 +34,7 @@ const question = () => {
     console.log(`Question: ${num}`);
     const userUnswer = readLineSync.question('Your answer: ');
      
-      if (answer === userUnswer && answer !== 1) {
+      if (answer === userUnswer && answer !== Number(1)) {
         i += 1;
         console.log('Correct!');
 
