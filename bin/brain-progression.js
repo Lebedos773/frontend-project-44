@@ -10,7 +10,7 @@ console.log(`Hello, ${name}!`);
 console.log('What number is missing in the progression?.');
 
 const makeProgression = () => {
-  let result = [];
+  const result = [];
 
   const rndmNum = Math.ceil(Math.random() * 100);
   const rndmStep = Math.ceil(Math.random() * 5);
@@ -25,7 +25,6 @@ const ascking = () => {
   let i = 0;
 
   while (i < 3) {
-  
     const arr1 = makeProgression();
     const getRandom = Math.ceil(Math.random() * 9);
     const rightAnswer = arr1[getRandom];
@@ -34,7 +33,7 @@ const ascking = () => {
 
     console.log(`Question: ${arr2.join(' ')}`);
     const userAnswer = readLineSync.question('Your answer: ');
-   
+
     if (Number(userAnswer) === rightAnswer) {
       i += 1;
       console.log('Correct!');

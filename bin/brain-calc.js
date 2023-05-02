@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 import readLineSync from 'readline-sync';
-import mathematics from '../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 
@@ -9,6 +8,19 @@ const name = readLineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 
 console.log('What is the result of the expression?');
+
+const mathematics = (number1, operator, number2) => {
+  let sum = 0;
+  if (operator === '+') {
+    sum = number1 + number2;
+  } else if (operator === '-') {
+    sum = number1 - number2;
+  } else if (operator === '*') {
+    sum = number1 * number2;
+  } else {
+    return sum;
+  }
+};
 
 const ascking = () => {
   let i = 0;
