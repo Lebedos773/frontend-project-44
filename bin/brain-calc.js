@@ -12,13 +12,13 @@ console.log('What is the result of the expression?');
 const mathematics = (number1, operator, number2) => {
   let sum = 0;
   if (operator === '+') {
-    sum = number1 + number2;
+    return sum = number1 + number2;
   } else if (operator === '-') {
-    sum = number1 - number2;
+    return sum = number1 - number2;
   } else if (operator === '*') {
-    sum = number1 * number2;
+    return sum = number1 * number2;
   } else {
-    return Number(sum);
+    return sum;
   }
 };
 
