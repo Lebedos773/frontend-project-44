@@ -10,16 +10,12 @@ console.log(`Hello, ${name}!`);
 console.log('What is the result of the expression?');
 
 const mathematics = (number1, operator, number2) => {
-  let sum = 0;
   if (operator === '+') {
-    return sum = number1 + number2;
-  } else if (operator === '-') {
-    return sum = number1 - number2;
-  } else if (operator === '*') {
-    return sum = number1 * number2;
-  } else {
-    return sum;
+    return number1 + number2;
+  } if (operator === '-') {
+    return number1 - number2;
   }
+  return number1 * number2;
 };
 
 const ascking = () => {
