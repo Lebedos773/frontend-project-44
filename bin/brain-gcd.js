@@ -1,7 +1,6 @@
 #! /usr/bin/env node
 
 import readLineSync from 'readline-sync';
-import { NOD } from '../src/index.js';
 
 console.log('Welcome to the Brain Games!');
 
@@ -9,6 +8,20 @@ const name = readLineSync.question('May I have your name? ');
 
 console.log(`Hello, ${name}!`);
 console.log('Find the greatest common divisor of given numbers.');
+
+function NOD(number1, number2) {
+  let c;
+  while (number1 !== number2) {
+    if (number1 > number2) {
+      number1 -= number2;
+    } if (number1 < number2) {
+      c = number1;
+      number1 = number2;
+      number2 = c;
+    }
+  }
+  return number1;
+};
 
 const ascking = () => {
   let i = 0;
