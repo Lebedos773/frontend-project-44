@@ -18,7 +18,7 @@ const mathematics = (number1, operator, number2) => {
   } else if (operator === '*') {
     sum = number1 * number2;
   } else {
-    return sum;
+    return Number(sum);
   }
 };
 
